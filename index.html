@@ -30,8 +30,8 @@
     <title>Hey, I'm Nick!</title>
   </head>
   <body>
-    <main class="flex h-screen w-full flex-col bg-white">
-      <section class="container">
+    <main class="flex h-max w-full flex-col bg-white">
+      <section class="relative h-[568px]">
         <nav class="flex h-16 w-full flex-col items-start">
           <div
             class="flex h-full w-full flex-row items-center justify-between px-4"
@@ -47,7 +47,38 @@
           </div>
           <div class="h-[1px] w-full bg-light"></div>
         </nav>
-        <div>Main Iform</div>
+        <div class="container h-full p-[15px]">
+          <div class="gap-1">
+            <div class="text-m-xl text-black">Hey, I’m Nick</div>
+            <div class="text-m-body text-grey">Frontend developer</div>
+          </div>
+          <div class="mt-[38px] flex flex-col items-start gap-6">
+            <div class="h-[3px] w-[25px] bg-purple"></div>
+            <div class="text-m-body text-grey">
+              Help you to create high-quality digital<br />
+              products that your clients will love<br />
+              and let your business thrive
+            </div>
+          </div>
+          <div class="">
+            <button
+              class="mt-[27px] flex items-center justify-center gap-2 rounded-[50px] bg-purple px-[13px] py-[9px] text-m-sub-2 text-white"
+            >
+              <div>Get in touch</div>
+              <div>
+                <img
+                  src="./assets/airplane.svg"
+                  alt="go"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+        <img
+          class="absolute -right-[15px] bottom-0 z-0 resize-none"
+          src="./assets/mp.png"
+          alt="nick"
+        />
       </section>
       <section class="container text-h-1">About</section>
       <section>Get in touch</section>
