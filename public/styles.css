@@ -545,24 +545,8 @@ html {
   right: 0px;
 }
 
-.-right-\[15px\] {
-  right: -15px;
-}
-
 .bottom-0 {
   bottom: 0px;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .mt-\[38px\] {
@@ -577,8 +561,13 @@ html {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-\[568px\] {
+  height: 568px;
 }
 
 .h-16 {
@@ -597,13 +586,8 @@ html {
   height: 3px;
 }
 
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.h-\[568px\] {
-  height: 568px;
+.h-11 {
+  height: 2.75rem;
 }
 
 .w-full {
@@ -614,8 +598,26 @@ html {
   width: 25px;
 }
 
-.resize-none {
-  resize: none;
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.min-w-\[120px\] {
+  min-width: 120px;
 }
 
 .flex-row {
@@ -624,6 +626,10 @@ html {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -654,8 +660,54 @@ html {
   gap: 0.5rem;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-\[50px\] {
   border-radius: 50px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-purple {
+  --tw-border-opacity: 1;
+  border-color: rgb(126 58 242 / var(--tw-border-opacity));
+}
+
+.border-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -682,16 +734,6 @@ html {
   padding-right: 1rem;
 }
 
-.px-\[9px\] {
-  padding-left: 9px;
-  padding-right: 9px;
-}
-
-.py-\[13px\] {
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
 .px-\[13px\] {
   padding-left: 13px;
   padding-right: 13px;
@@ -700,6 +742,32 @@ html {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 100px;
 }
 
 .text-m-xl {
@@ -714,15 +782,27 @@ html {
   font-weight: 400;
 }
 
-.text-h-1 {
-  font-size: 3.75rem;
-  line-height: 90px;
-  font-weight: 700;
-}
-
 .text-m-sub-2 {
   font-size: 0.875rem;
   line-height: 21px;
+  font-weight: 600;
+}
+
+.text-m-sub {
+  font-size: 1.25rem;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.text-sub-2 {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.text-body {
+  font-size: 1.25rem;
+  line-height: 30px;
   font-weight: 600;
 }
 

@@ -31,7 +31,7 @@
   </head>
   <body>
     <main class="flex h-max w-full flex-col bg-white">
-      <section class="relative h-[568px]">
+      <section class="relative h-[568px] overflow-hidden">
         <nav class="flex h-16 w-full flex-col items-start">
           <div
             class="flex h-full w-full flex-row items-center justify-between px-4"
@@ -75,12 +75,121 @@
           </div>
         </div>
         <img
-          class="absolute -right-[15px] bottom-0 z-0 resize-none"
+          class="absolute right-0 bottom-0"
           src="./assets/mp.png"
           alt="nick"
         />
       </section>
-      <section class="container text-h-1">About</section>
+      <section
+        class="container flex flex-col gap-12 px-[15px] pt-12 pb-[100px]"
+      >
+        <div class="flex flex-col gap-9">
+          <div class="text-m-sub">About me</div>
+          <img
+            src="./assets/circle.png"
+            alt="circle Nick"
+          />
+          <div class="flex flex-col items-start gap-6">
+            <div class="h-[3px] w-[25px] bg-purple"></div>
+            <div>
+              <span class="text-sub-2 text-black">Nick Richardson</span> -
+              specialist in Frontend development. Clear code is my passion.
+              Solving issues through negotiations
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start gap-7">
+          <div class="text-m-sub text-black">Interests</div>
+          <div class="flex flex-col gap-6">
+            <div class="flex gap-2">
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple"
+              >
+                <img
+                  src="assets/music.svg"
+                  alt="music"
+                />
+              </div>
+              <div class="text-black">
+                <div class="text-m-sub-2">Music</div>
+                <div class="text-m-body">Indie rock | Reggae</div>
+              </div>
+            </div>
+
+            <div class="flex gap-2">
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple"
+              >
+                <img
+                  src="assets/art.svg"
+                  alt="art"
+                />
+              </div>
+              <div class="text-black">
+                <div class="text-m-sub-2">Art</div>
+                <div class="text-m-body">Edvard Munch | Frida Kahlo</div>
+              </div>
+            </div>
+
+            <div class="flex gap-2">
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple"
+              >
+                <img
+                  src="assets/photography.svg"
+                  alt="photo"
+                />
+              </div>
+              <div class="text-black">
+                <div class="text-m-sub-2">Photography</div>
+                <div class="text-m-body">Portraits</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start gap-7">
+          <div class="text-m-sub text-black">Education & Experience</div>
+          <div class="flex flex-col gap-3 text-black">
+            <div class="flex gap-1 border-b border-light pb-3">
+              <div class="min-w-[120px] text-m-body">2008 - Present</div>
+              <div class="flex flex-col gap-2">
+                <div class="text-m-sub-2">Middle Frontend developer</div>
+                <div>Ozon</div>
+              </div>
+            </div>
+
+            <div class="flex gap-1 border-b border-light pb-3">
+              <div class="min-w-[120px] text-m-body">2006 - 2007</div>
+              <div class="flex flex-col gap-2">
+                <div class="text-m-sub-2">Junior Frontend developer</div>
+                <div>Facebook</div>
+              </div>
+            </div>
+
+            <div class="flex gap-1 border-b border-light pb-3">
+              <div class="min-w-[120px] text-m-body">2000 - 2005</div>
+              <div class="flex flex-col gap-2">
+                <div class="text-m-sub-2">Frontend developer</div>
+                <div>Stanford University</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="flex w-max items-center justify-center gap-2 rounded-[50px] bg-purple px-[13px] py-[9px] text-m-sub-2 text-white"
+        >
+          <div>Get in touch</div>
+          <div>
+            <img
+              src="./assets/airplane.svg"
+              alt="go"
+            />
+          </div>
+        </button>
+      </section>
       <section>Get in touch</section>
       <footer>Footer</footer>
     </main>
