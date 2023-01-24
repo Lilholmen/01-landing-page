@@ -190,7 +190,97 @@
           </div>
         </button>
       </section>
-      <section>Get in touch</section>
+      <section
+        class="flex items-center justify-center bg-gradient bg-cover py-16 px-2.5"
+      >
+        <div
+          class="flex w-full flex-col gap-9 rounded-2xl bg-[#FFF] py-12 px-[5px]"
+        >
+          <div class="text-center text-m-sub">Let’s discuss your project</div>
+
+          <form class="flex flex-col items-center gap-6">
+            <div class="flex flex-col gap-2">
+              <label
+                class="text-m-sub-2"
+                for="name"
+                >Your full name <span class="text-red">*</span></label
+              >
+              <div class="relative w-full">
+                <div
+                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/people.svg"
+                    alt="man"
+                  />
+                </div>
+                <input
+                  class="rounded-2xl border border-light bg-white p-2.5 px-5 py-[13px] pl-12 text-m-body text-grey hover:border-purple"
+                  type="text"
+                  id="name"
+                  placeholder="Name Surname"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label
+                class="text-m-sub-2"
+                for="name"
+                >Your email <span class="text-red">*</span></label
+              >
+              <div class="relative w-full">
+                <div
+                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+                >
+                  <img
+                    class="h-6 w-6"
+                    src="assets/error.svg"
+                    alt="man"
+                  />
+                </div>
+                <input
+                  class="rounded-2xl border border-red bg-white p-2.5 px-5 py-[13px] pl-12 text-m-body text-red"
+                  type="email"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <p class="text-[12px] font-semibold text-red">
+                Please fill this mandatory field
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label
+                class="text-m-sub-2"
+                for="text"
+                >Tell me about your project</label
+              >
+              <div class="w-full">
+                <textarea
+                  class="h-[122px] w-[258px] resize-none overflow-hidden rounded-2xl border border-light bg-white py-[13px] px-5 text-m-body text-grey hover:border-purple"
+                  name="text"
+                  placeholder="Add here a general description of your idea and target aim"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+
+          <button
+            class="ml-4 flex w-max items-center justify-center gap-2 rounded-[50px] bg-purple px-[13px] py-[9px] text-m-sub-2 text-white"
+          >
+            <div>Get in touch</div>
+            <div>
+              <img
+                src="./assets/airplane.svg"
+                alt="go"
+              />
+            </div>
+          </button>
+        </div>
+      </section>
       <footer>Footer</footer>
     </main>
   </body>

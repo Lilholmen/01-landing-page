@@ -93,7 +93,11 @@ module.exports = {
         },
       ],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        gradient: "url('/assets/gradient.png')",
+      },
+    },
   },
   plugins: [],
 };
