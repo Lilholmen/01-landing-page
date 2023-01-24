@@ -664,10 +664,6 @@ html {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -730,6 +726,10 @@ html {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-purple {
@@ -812,9 +812,14 @@ html {
   padding-bottom: 4rem;
 }
 
-.px-\[10px\] {
-  padding-left: 10px;
-  padding-right: 10px;
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-12 {
@@ -837,14 +842,9 @@ html {
   padding-bottom: 13px;
 }
 
-.px-2\.5 {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-\[22px\] {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .pt-12 {
@@ -932,4 +932,27 @@ html {
 .hover\:border-purple:hover {
   --tw-border-opacity: 1;
   border-color: rgb(126 58 242 / var(--tw-border-opacity));
+}
+
+@media (min-width: 792px) {
+  .md\:px-\[85px\] {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
+  .md\:py-\[28\.35px\] {
+    padding-top: 28.35px;
+    padding-bottom: 28.35px;
+  }
+
+  .md\:py-\[28\2c 35px\] {
+    padding-top: 28,35px;
+    padding-bottom: 28,35px;
+  }
+
+  .md\:text-body-2 {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+  }
 }
