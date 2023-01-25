@@ -39,7 +39,7 @@ module.exports = {
       "m-xl": [
         "1.5rem",
         {
-          lineHeight: "60px",
+          lineHeight: "150%",
           fontWeight: "700",
         },
       ],
@@ -64,7 +64,7 @@ module.exports = {
           fontWeight: "600",
         },
       ],
-      body: [
+      sub: [
         "1.25rem",
         {
           lineHeight: "30px",
@@ -96,6 +96,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         gradient: "url('/assets/gradient.png')",
+        "nick-main": "url('/assets/mp.png')",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
