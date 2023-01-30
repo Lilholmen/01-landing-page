@@ -3,6 +3,7 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     screens: {
+      sm: "320px",
       md: "792px",
       lg: "1280px",
     },
@@ -97,9 +98,19 @@ module.exports = {
       backgroundImage: {
         gradient: "url('/assets/gradient.png')",
         "nick-main": "url('/assets/mp.png')",
+        "nick-main-md": "url('/assets/md_main.png')",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      container: {
+        center: true,
+      },
+      spacing: {
+        3.25: "13px",
+        9.75: "39px",
+        15: "60px",
       },
     },
   },

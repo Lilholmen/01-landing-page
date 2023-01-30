@@ -34,44 +34,65 @@
       <section class="relative flex flex-col overflow-hidden">
         <nav class="flex h-16 w-full flex-col border-b border-light">
           <div
-            class="flex h-full w-full flex-row items-center justify-between gap-[227px] px-4"
+            class="flex h-full w-full flex-row items-center justify-between gap-[227px] px-4 md:px-9.75"
           >
             <img
               src="assets/Logo.svg"
               alt="logo"
             />
             <img
+              class="md:hidden"
               src="assets/menu.svg"
               alt="menu"
             />
+            <div class="hidden md:flex">
+              <ul
+                class="flex flex-row items-center justify-end gap-6 text-sub-2 text-grey"
+              >
+                <li class="text-purple"><a href="#">Main</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Get in touch</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
 
         <div
-          class="container h-full bg-nick-main bg-contain bg-right-bottom bg-no-repeat px-[15px] pt-[27px] pb-[225px]"
+          class="container h-full bg-nick-main bg-contain bg-right-bottom bg-no-repeat px-[15px] pt-[27px] pb-[225px] md:bg-nick-main-md md:px-9.75 md:pt-11 md:pb-[51px]"
         >
           <div class="flex flex-col items-start gap-1">
-            <div class="text-m-xl text-black">Hey, I’m Nick</div>
-            <div class="text-m-body text-grey">Frontend developer</div>
+            <div class="text-m-xl text-black md:text-h-1">Hey, I’m Nick</div>
+            <div class="text-m-body text-grey md:text-body">
+              Frontend developer
+            </div>
           </div>
-          <div class="relative mt-[38px] pt-6">
+          <div class="relative mt-[38px] pt-6 md:pt-4">
             <div
               class="absolute -top-[3px] w-[25px] border-t-[3px] border-purple"
             ></div>
-            <div class="flex items-center text-m-body text-grey">
-              Help you to create high-quality digital<br />
-              products that your clients will love<br />
-              and let your business thrive
+            <div
+              class="flex items-center pr-6 text-m-body text-grey md:max-w-[445px] md:text-body"
+            >
+              Help you to create high-quality digital products that your clients
+              will love and let your business thrive
             </div>
           </div>
-          <div class="">
+          <div class="pt-[27px] md:pt-11">
             <button
-              class="mt-[27px] flex items-center justify-center gap-2 rounded-[50px] bg-purple px-[13px] py-[9px] text-m-sub-2 text-white"
+              class="flex items-center justify-center gap-2 rounded-[50px] bg-purple px-3.25 py-[9px] text-m-sub-2 text-white md:gap-3 md:py-3.25 md:px-[25px]"
             >
-              <div class="text-m-sub-2">Get in touch</div>
-              <div class="flex h-4 w-4 items-center justify-center">
+              <div class="text-m-sub-2 md:text-sub-2">Get in touch</div>
+              <div
+                class="flex h-4 w-4 items-center justify-center md:h-6 md:w-6"
+              >
                 <img
+                  class="block md:hidden"
                   src="./assets/airplane.svg"
+                  alt="go"
+                />
+                <img
+                  class="hidden md:block"
+                  src="./assets/md_send.svg"
                   alt="go"
                 />
               </div>
@@ -80,108 +101,156 @@
         </div>
       </section>
       <section
-        class="container flex flex-col gap-12 px-[15px] pt-12 pb-[100px]"
+        class="container flex flex-col gap-12 px-[15px] pt-12 pb-[100px] md:h-[1542px] md:gap-16 md:px-9.75 md:pt-20 md:pb-[132px]"
       >
-        <div class="flex flex-col gap-9">
-          <div class="text-m-sub">About me</div>
-          <img
-            src="./assets/circle.png"
-            alt="circle Nick"
-          />
-          <div class="relative pt-6">
+        <div class="flex flex-col gap-9 md:gap-20">
+          <div class="w-full text-m-sub md:text-h-2">About me</div>
+          <div class="flex flex-col items-center gap-9 md:flex-row md:gap-11">
+            <img
+              class="block md:inline-block"
+              height="290"
+              width="290"
+              src="./assets/circle.png"
+              alt="circle Nick"
+            />
+            <div class="relative flex flex-col gap-11 pt-6">
+              <div
+                class="absolute -top-[3px] w-[25px] border-t-[3px] border-purple"
+              ></div>
+              <div class="text-m-body text-grey md:text-body">
+                <span class="font-semibold text-black md:font-semibold"
+                  >Nick Richardson</span
+                >
+                - specialist in <br class="hidden md:inline" />Frontend
+                development. <br class="hidden md:inline" />Clear code is my
+                passion. <br class="hidden md:inline" />Solving issues through
+                negotiations
+              </div>
+
+              <div class="hidden w-full md:block">
+                <button
+                  class="flex items-center justify-center gap-2 rounded-[50px] bg-purple px-3.25 py-[9px] text-m-sub-2 text-white md:gap-3 md:py-3.25 md:px-[25px]"
+                >
+                  <div class="text-m-sub-2 md:text-sub-2">Get in touch</div>
+                  <div
+                    class="flex h-4 w-4 items-center justify-center md:h-6 md:w-6"
+                  >
+                    <img
+                      class="block md:hidden"
+                      src="./assets/airplane.svg"
+                      alt="go"
+                    />
+                    <img
+                      class="hidden md:block"
+                      src="./assets/md_send.svg"
+                      alt="go"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-12 md:gap-20">
+          <div class="flex flex-col items-start gap-7 md:gap-11">
+            <div class="text-m-sub text-black md:text-h-3">Interests</div>
+            <div class="flex flex-col gap-6 md:gap-11">
+              <div class="flex gap-2 md:gap-4">
+                <div
+                  class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple md:h-15 md:w-15 md:p-[18px]"
+                >
+                  <img
+                    class="md:h-full"
+                    src="assets/music.svg"
+                    alt="music"
+                  />
+                </div>
+                <div class="flex flex-col gap-1 text-black md:gap-2">
+                  <div class="text-m-sub-2 md:text-sub">Music</div>
+                  <div class="text-m-body md:text-body">
+                    Indie rock | Reggae
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-2 md:gap-4">
+                <div
+                  class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple md:h-15 md:w-15 md:p-[18px]"
+                >
+                  <img
+                    class="md:h-full"
+                    src="assets/art.svg"
+                    alt="music"
+                  />
+                </div>
+                <div class="flex flex-col gap-1 text-black md:gap-2">
+                  <div class="text-m-sub-2 md:text-sub">Art</div>
+                  <div class="text-m-body md:text-body">
+                    Edvard Munch | Frida Kahlo
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-2 md:gap-4">
+                <div
+                  class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple md:h-15 md:w-15 md:p-[18px]"
+                >
+                  <img
+                    class="md:h-full"
+                    src="assets/photography.svg"
+                    alt="music"
+                  />
+                </div>
+                <div class="flex flex-col gap-1 text-black md:gap-2">
+                  <div class="text-m-sub-2 md:text-sub">Photography</div>
+                  <div class="text-m-body md:text-body">Portraits</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-start gap-7 md:gap-11">
+            <div class="text-m-sub text-black md:text-h-3">
+              Education & Experience
+            </div>
             <div
-              class="absolute -top-[3px] w-[25px] border-t-[3px] border-purple"
-            ></div>
-            <div class="text-m-body">
-              <span class="font-semibold text-black">Nick Richardson</span> -
-              specialist in Frontend development. Clear code is my passion.
-              Solving issues through negotiations
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col items-start gap-7">
-          <div class="text-m-sub text-black">Interests</div>
-          <div class="flex flex-col gap-6">
-            <div class="flex gap-2">
+              class="flex w-full flex-col gap-3 text-m-body text-black md:gap-6 md:text-body"
+            >
               <div
-                class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple"
+                class="flex gap-1 border-b border-light pb-[11px] md:gap-4 md:pb-8"
               >
-                <img
-                  src="assets/music.svg"
-                  alt="music"
-                />
+                <div class="min-w-[120px] md:min-w-[152px]">2008 - Present</div>
+                <div class="flex flex-col gap-2">
+                  <div class="font-semibold">Middle Frontend developer</div>
+                  <div class="">Ozon</div>
+                </div>
               </div>
-              <div class="flex flex-col gap-1 text-black">
-                <div class="text-m-sub-2">Music</div>
-                <div class="text-m-body">Indie rock | Reggae</div>
-              </div>
-            </div>
 
-            <div class="flex gap-2">
               <div
-                class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple"
+                class="flex gap-1 border-b border-light pb-[11px] md:gap-4 md:pb-8"
               >
-                <img
-                  src="assets/art.svg"
-                  alt="art"
-                />
+                <div class="min-w-[120px] md:min-w-[152px]">2006 - 2007</div>
+                <div class="flex flex-col gap-2">
+                  <div class="font-semibold">Frontend development courses</div>
+                  <div class="">Stepik</div>
+                </div>
               </div>
-              <div class="flex flex-col gap-1 text-black">
-                <div class="text-m-sub-2">Art</div>
-                <div class="text-m-body">Edvard Munch | Frida Kahlo</div>
-              </div>
-            </div>
 
-            <div class="flex gap-2">
-              <div
-                class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-purple"
-              >
-                <img
-                  src="assets/photography.svg"
-                  alt="photo"
-                />
-              </div>
-              <div class="flex flex-col gap-1 text-black">
-                <div class="text-m-sub-2">Photography</div>
-                <div class="text-m-body">Portraits</div>
+              <div class="flex gap-1 pb-[11px] md:gap-4 md:pb-8">
+                <div class="min-w-[120px] md:min-w-[152px]">2000 - 2005</div>
+                <div class="flex flex-col gap-2">
+                  <div class="font-semibold">Frontend developer</div>
+                  <div class="">Saint Petersburg State University</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col items-start gap-7">
-          <div class="text-m-sub text-black">Education & Experience</div>
-          <div class="flex flex-col gap-3 text-black">
-            <div class="flex gap-1 border-b border-light pb-[11px]">
-              <div class="min-w-[120px] text-m-body">2008 - Present</div>
-              <div class="flex flex-col gap-2">
-                <div class="text-m-sub-2">Middle Frontend developer</div>
-                <div class="text-m-body">Ozon</div>
-              </div>
-            </div>
-
-            <div class="flex gap-1 border-b border-light pb-[11px]">
-              <div class="min-w-[120px] text-m-body">2006 - 2007</div>
-              <div class="flex flex-col gap-2">
-                <div class="text-m-sub-2">Junior Frontend developer</div>
-                <div class="text-m-body">Facebook</div>
-              </div>
-            </div>
-
-            <div class="flex gap-1 border-b border-light pb-[11px]">
-              <div class="min-w-[120px] text-m-body">2000 - 2005</div>
-              <div class="flex flex-col gap-2">
-                <div class="text-m-sub-2">Frontend developer</div>
-                <div class="text-m-body">Stanford University</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
+        <div class="block md:hidden">
           <button
-            class="flex items-center justify-center gap-2 rounded-[50px] bg-purple px-[13px] py-[9px] text-m-sub-2 text-white"
+            class="flex items-center justify-center gap-2 rounded-[50px] bg-purple px-3.25 py-[9px] text-m-sub-2 text-white"
           >
             <div class="text-m-sub-2">Get in touch</div>
             <div class="flex h-4 w-4 items-center justify-center">
@@ -194,92 +263,107 @@
         </div>
       </section>
       <section
-        class="flex items-center justify-center bg-gradient bg-cover py-16 px-2.5"
+        class="flex items-center justify-center bg-gradient bg-cover py-16 px-2.5 md:py-[70px] md:pl-9.75 md:pr-[41px]"
       >
         <div
-          class="flex w-full flex-col gap-9 rounded-2xl bg-[#FFF] py-12 px-[5px]"
+          class="flex w-full flex-col gap-9 rounded-2xl bg-[#FFF] py-12 px-[5px] md:gap-12 md:py-12 md:px-8"
         >
-          <div class="text-center text-m-sub">Let’s discuss your project</div>
+          <div class="text-center text-m-sub md:text-left md:text-h-2">
+            Let’s discuss your project
+          </div>
 
-          <form class="flex flex-col items-start gap-6 px-4">
-            <div class="flex w-full flex-col gap-2">
-              <label
-                class="text-m-sub-2"
-                for="name"
-                >Your full name <span class="text-red">*</span></label
-              >
-              <div class="relative w-full">
-                <div
-                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-5"
+          <form class="flex flex-col items-start gap-6 px-4 md:gap-4 md:px-0">
+            <div class="flex w-full flex-col gap-6 md:flex-row">
+              <div class="flex w-full flex-col gap-2 md:w-1/2">
+                <label
+                  class="text-m-sub-2 md:text-sub-2"
+                  for="name"
+                  >Your full name <span class="text-red">*</span></label
                 >
-                  <img
-                    class="h-6 w-6"
-                    src="assets/person.svg"
-                    alt="man"
+                <div class="relative w-full">
+                  <div
+                    class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-5"
+                  >
+                    <img
+                      class="h-6 w-6"
+                      src="assets/person.svg"
+                      alt="man"
+                    />
+                  </div>
+                  <input
+                    class="h-[50px] w-full rounded-2xl border border-light bg-white px-5 py-3.25 pl-[54px] text-m-body text-grey hover:border-purple md:text-body-2"
+                    type="text"
+                    id="name"
+                    placeholder="Name Surname"
                   />
                 </div>
-                <input
-                  class="h-[50px] w-full rounded-2xl border border-light bg-white px-5 py-[13px] pl-[54px] text-m-body text-grey hover:border-purple"
-                  type="text"
-                  id="name"
-                  placeholder="Name Surname"
-                />
+              </div>
+
+              <div class="flex w-full flex-col gap-2 md:w-1/2">
+                <label
+                  class="text-m-sub-2 md:text-sub-2"
+                  for="name"
+                  >Your email <span class="text-red">*</span></label
+                >
+                <div class="relative w-full">
+                  <div
+                    class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-5"
+                  >
+                    <img
+                      class="h-6 w-6"
+                      src="assets/error.svg"
+                      alt="man"
+                    />
+                  </div>
+                  <input
+                    class="h-[50px] w-full rounded-2xl border border-red bg-white px-5 py-3.25 pl-[54px] text-m-body text-red md:text-body-2"
+                    type="email"
+                    id="email"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <p
+                  class="-mt-1 mb-[7px] font-inter text-[12px] font-semibold text-red md:mb-0 md:font-montserrat md:text-m-sub-2"
+                >
+                  Please fill this mandatory field
+                </p>
               </div>
             </div>
 
             <div class="flex w-full flex-col gap-2">
               <label
-                class="text-m-sub-2"
-                for="name"
-                >Your email <span class="text-red">*</span></label
-              >
-              <div class="relative w-full">
-                <div
-                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-5"
-                >
-                  <img
-                    class="h-6 w-6"
-                    src="assets/error.svg"
-                    alt="man"
-                  />
-                </div>
-                <input
-                  class="h-[50px] w-full rounded-2xl border border-red bg-white px-5 py-[13px] pl-[54px] text-m-body text-red"
-                  type="email"
-                  id="email"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <p
-                class="-mt-1 mb-[7px] font-inter text-[12px] font-semibold text-red"
-              >
-                Please fill this mandatory field
-              </p>
-            </div>
-
-            <div class="flex w-full flex-col gap-2">
-              <label
-                class="py-[1px] text-m-sub-2"
+                class="py-[1px] text-m-sub-2 md:py-0 md:text-sub-2"
                 for="text"
                 >Tell me about your project</label
               >
               <div class="w-full">
                 <textarea
-                  class="h-[122px] w-full resize-none overflow-hidden rounded-2xl border border-light bg-white py-[13px] px-5 text-m-body text-grey hover:border-purple"
+                  class="h-[122px] w-full resize-none overflow-hidden rounded-2xl border border-light bg-white py-3.25 px-5 text-m-body text-grey hover:border-purple md:text-body-2"
                   name="text"
                   placeholder="Add here a general description of your idea and target aim"
                 ></textarea>
               </div>
             </div>
 
-            <div class="mt-[5px]">
+            <div class="md:pt-6">
               <button
-                class="flex items-center justify-center gap-2 rounded-[50px] bg-purple px-[13px] py-[9px] text-m-sub-2 text-white"
+                class="flex items-center justify-center gap-2 rounded-[50px] bg-purple px-3.25 py-[9px] text-m-sub-2 text-white md:gap-3 md:py-3.25 md:px-[25px]"
               >
-                <div class="text-m-sub-2">Get in touch</div>
-                <div class="flex h-4 w-4 items-center justify-center">
+                <div class="text-m-sub-2 md:text-sub-2">
+                  <span class="block md:hidden">Get in touch</span
+                  ><span class="hidden md:block">Submit</span>
+                </div>
+                <div
+                  class="flex h-4 w-4 items-center justify-center md:h-6 md:w-6"
+                >
                   <img
+                    class="block md:hidden"
                     src="./assets/airplane.svg"
+                    alt="go"
+                  />
+                  <img
+                    class="hidden md:block"
+                    src="./assets/md_send.svg"
                     alt="go"
                   />
                 </div>
@@ -288,10 +372,10 @@
           </form>
         </div>
       </section>
-      <footer class="h-16 border-t border-light bg-white px-[15px] pt-[21px]">
-        <div
-          class="text-m-body text-grey md:px-[85px] md:py-[28,35px] md:text-body-2"
-        >
+      <footer
+        class="h-16 border-t border-light bg-white px-[15px] py-[21px] md:h-[81px] md:px-[85px] md:py-[28px]"
+      >
+        <div class="text-m-body text-grey md:text-body-2">
           © 2022 JetRuby. All Rights Reserved
         </div>
       </footer>
