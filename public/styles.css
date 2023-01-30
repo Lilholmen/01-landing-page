@@ -1283,28 +1283,16 @@ html {
     height: 1248px;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:justify-between {
-    justify-content: space-between;
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:gap-\[158px\] {
     gap: 158px;
-  }
-
-  .lg\:gap-16 {
-    gap: 4rem;
-  }
-
-  .lg\:gap-20 {
-    gap: 5rem;
   }
 
   .lg\:gap-\[217px\] {
@@ -1330,16 +1318,12 @@ html {
     padding-right: 3rem;
   }
 
-  .lg\:pt-\[166px\] {
-    padding-top: 166px;
+  .lg\:pb-\[166px\] {
+    padding-bottom: 166px;
   }
 
   .lg\:pt-\[164px\] {
     padding-top: 164px;
-  }
-
-  .lg\:pt-\[92px\] {
-    padding-top: 92px;
   }
 
   .lg\:pt-6 {
@@ -1348,10 +1332,6 @@ html {
 
   .lg\:pt-15 {
     padding-top: 60px;
-  }
-
-  .lg\:pb-\[166px\] {
-    padding-bottom: 166px;
   }
 
   .lg\:pt-\[100px\] {
