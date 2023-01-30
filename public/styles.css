@@ -782,11 +782,11 @@ html {
 }
 
 .bg-nick-main {
-  background-image: url('./assets/mp.png');
+  background-image: url('assets/mp.png');
 }
 
 .bg-gradient {
-  background-image: url('./assets/gradient.png');
+  background-image: url('assets/gradient.png');
 }
 
 .bg-contain {
@@ -1098,7 +1098,7 @@ html {
   }
 
   .md\:bg-nick-main-md {
-    background-image: url('./assets/md_main.png');
+    background-image: url('assets/md_main.png');
   }
 
   .md\:p-\[18px\] {
@@ -1300,7 +1300,7 @@ html {
   }
 
   .lg\:bg-nick-main-lg {
-    background-image: url('./assets/lg_main.png');
+    background-image: url('assets/lg_main.png');
   }
 
   .lg\:px-\[85px\] {

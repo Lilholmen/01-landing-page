@@ -96,10 +96,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        gradient: "url('./assets/gradient.png')",
-        "nick-main": "url('./assets/mp.png')",
-        "nick-main-md": "url('./assets/md_main.png')",
-        "nick-main-lg": "url('./assets/lg_main.png')",
+        gradient: "url('assets/gradient.png')",
+        "nick-main": "url('assets/mp.png')",
+        "nick-main-md": "url('assets/md_main.png')",
+        "nick-main-lg": "url('assets/lg_main.png')",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
